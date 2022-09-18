@@ -1,0 +1,31 @@
+.service-title {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(197, 197, 197);
+    margin-bottom: 120px;
+    font-size: 50px;
+}
+
+
+.service-column {
+    float: left;
+    width: 33.33333%;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .service-row {
+    margin: 0 100px;
+  }
+  
+  /* Clear floats after the columns */
+  .service-row:after {
+    content: "";
+    clear: both;
+}
+
+  .service-container {
+    width: 100%;
+    height: 880px;
+    background-image: linear-gradient(to left, #bdbdbd, #000000);
+  }
+

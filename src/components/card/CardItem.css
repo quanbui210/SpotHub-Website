@@ -1,0 +1,43 @@
+.code-icon {
+    margin-left: 10px
+}
+
+.card-img {
+    width: 220px;
+    height: 245px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px;
+}
+
+.extra-content {
+    font-weight: 450;
+    font-size: 15px;
+    font-style: normal;
+    color: rgb(177, 177, 177)
+}
+
+.card-text {
+    font-weight: 520;
+    color: rgb(161, 176, 192)
+}
+
+.page-title {
+    text-align: center;
+    color: rgb(255, 254, 254);
+    margin-top: 140px;
+    font-size: 41px;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #777777, #666666);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+}
+
+.subtitle{
+    text-align: center;
+    color: rgb(150, 150, 150);
+    margin-top: 25px;
+    font-weight: 450;
+    font-size: 22px;
+}

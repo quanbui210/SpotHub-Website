@@ -1,0 +1,15 @@
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(172, 165, 165);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    background-image: linear-gradient(to left, #bdbdbd, #000000);
+}
+

@@ -1,0 +1,38 @@
+.nav-list {
+    display: flex;
+}
+
+.nav-name{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 18px; 
+    position: relative;
+    min-height: 26px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+}
+
+.nav-name:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.nav-item {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 18px; 
+    position: relative;
+    min-height: 26px;
+    text-decoration: none;
+    color: #ccc !important;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

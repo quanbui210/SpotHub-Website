@@ -1,0 +1,36 @@
+
+
+.service-card__text {
+    max-height: 10rem;
+    line-height: 2rem;
+    color: #cccccc;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 30px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.service-card__container {
+    height: 300px;
+}
+
+.service-card__title {
+    color: #cccccc;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+.service-card__img {
+    text-align: center;
+    width: 250px;
+    margin-left: 100px;
+}
+
+.service-card__img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .4s ease-in-out 0s;
+    -webkit-transform: all .4s ease-in-out 0s;
+}
