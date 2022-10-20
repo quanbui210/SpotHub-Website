@@ -3,13 +3,13 @@ import ServiceList from './ServiceList'
 import  './Service.css'
 
 
-const Services = (props) => {
+const Services = ({items}) => {
     return (
     <div className='service-container'>
     <h1 className="service-title">SpotHub's Services</h1>
     <div className="service-row">
-        {props.items.map(item => (
-            <div className="service-column">
+        {items.map(item => (
+            <div key={item.id} className="service-column">
             <ServiceList title={item.title} description={item.description} image={item.image}/>
             </div>
         ))}

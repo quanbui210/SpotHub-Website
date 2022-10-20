@@ -10,7 +10,7 @@ const cardItem = (props) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [title, setTitle] = useState(props.title);
   const updateTitle = (event) => {
-    setTitle(prevContent => [...prevContent, <p><span className='extra-content'>{props.extraContent}</span></p>])
+    setTitle(prevContent => [...prevContent, <div key={Math.random() * 100}><span className='extra-content'>{props.extraContent}</span></div>])
     event.currentTarget.disabled = true;
   }
 

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 .service-card__text {
     max-height: 10rem;
@@ -9,6 +9,8 @@
     margin: 30px;
     font-style: italic;
     font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .service-card__container {
@@ -25,7 +27,7 @@
 .service-card__img {
     text-align: center;
     width: 250px;
-    margin-left: 100px;
+    margin-left: 107px;
 }
 
 .service-card__img:hover {
@@ -34,3 +36,27 @@
     transition: all .4s ease-in-out 0s;
     -webkit-transform: all .4s ease-in-out 0s;
 }
+
+@media screen and (max-width: 1093px) {
+    .service-card__img{
+      margin-left: 300px;
+    }
+  }
+
+@media screen and (max-width: 850px) {
+    .service-card__img{
+    margin-left: 200px;
+    }
+  }
+
+@media screen and (max-width: 1650px) {
+    .service-card__img{
+    margin-left: 100px;
+    }
+  }
+
+@media screen and (max-width: 1350px) {
+    .service-card__img{
+    margin-left: 100px;
+    }
+  }

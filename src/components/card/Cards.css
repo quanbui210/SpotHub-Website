@@ -10,8 +10,6 @@
   margin-right: 15px;
 }
 
-
-
 .column {
     float: left;
     width: 25%;
@@ -42,12 +40,13 @@
     background-color: #3a393a;
     margin: 80px 20px 0px 50px;
     max-width: 300px;
+    
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     .column {
-      width: 100%;
+      width: 50%;
       display: block;
       margin-bottom: 20px;
     }

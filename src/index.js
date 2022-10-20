@@ -11,4 +11,4 @@ const element = <FontAwesomeIcon icon={faCoffee} />
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />, element, document.body);
+root.render(<App />);

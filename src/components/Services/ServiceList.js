@@ -11,6 +11,7 @@ const ServiceList = ({title, description, image}) => {
         <div className="service-card__title">{title}</div>
         <div className="service-card__text">
             {description}
+            
         </div>
         </div>
     )

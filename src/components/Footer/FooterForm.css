@@ -1,0 +1,51 @@
+.form-label {
+    color: #fff;
+}
+
+.form-label-check {
+    color: rgb(201, 199, 199);
+    font-size: 13px;
+}
+
+.form-text {
+    color: rgb(161, 161, 161);
+    font-size: 11px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    width: 80%;
+    margin-left: 30px;
+    height: 100%;
+}
+
+.footer-title {
+    margin-left: 100px;
+}
+
+.form-control {
+    margin: 0 auto;
+}
+
+.btn-footer {
+    color: #ccc;
+    margin-top: 18px;
+    border: 1px solid #ccc
+}
+
+.btn-footer:hover {
+    background-color: #ccc;
+    color: rgb(75, 74, 74);
+}
+
+.form-container {
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    padding: 34px;
+}
+
+.form-sub {
+    color: rgb(58, 58, 58);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
