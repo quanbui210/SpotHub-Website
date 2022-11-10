@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Form from 'react-bootstrap/Form';
 import './FooterForm.css'
 import ModalShow from '../../Modal/ModalShow'
@@ -10,7 +10,14 @@ const FooterForm = ({value, onClick, onChange}) => {
     const [error, setError] = useState(true)
     const [show, setShow] = useState(false);
     const [checked, setChecked] = useState(false)
-    const [checkLabel, setCheckLabel] = useState('By submitting this form I give my consent to process my data according to the company privacy policy.*')
+    const [errorCheck, setErrorCheck] = useState(false)
+    const [errorMsg, setErrorMsg] = useState('Please tick the checkbox')
+
+    useEffect(() => {
+      if(checked === true) {
+        setErrorMsg('')
+      }
+    }, [checked])
 
     const handleSubmitEmail = (event) => {
         event.preventDefault()
@@ -22,19 +29,17 @@ const FooterForm = ({value, onClick, onChange}) => {
             setShow(true)
             return
         } 
-        setEnteredEmail('')
-        if(checked === false) {
-          setCheckLabel(prevLabel => [prevLabel, <p key={Math.random()*100} style={{color: '#fa4141', fontSize: '12px', marginTop: '3px'}}>You need to select the checkbox!</p>])
-          return
-        } else {
-          setCheckLabel('By submitting this form I give my consent to process my data according to the company privacy policy.*')
+        if (checked === false) {
+          setErrorCheck(true)
         }
-          setCheckLabel('By submitting this form I give my consent to process my data according to the company privacy policy.*')
+        setEnteredEmail('')
+        
       }
       const handleClose = () => setError(null);
       const handleFormChange = (event) => setEnteredEmail(event.target.value)
       const handleCheckBox = (event) => setChecked(!checked)
-
+      
+     
 
 
   return (
@@ -50,7 +55,8 @@ const FooterForm = ({value, onClick, onChange}) => {
         </Form.Text>
       </Form.Group>
       <Form.Group className="form-group" controlId="formBasicCheckbox">
-        <Form.Check onChange={handleCheckBox} defaultChecked={checked}   className="form-label-check" type="checkbox" label={checkLabel}/>
+        <Form.Check onChange={handleCheckBox} defaultChecked={checked}   className="form-label-check" type="checkbox" label='By submitting this form I give my consent to process my data according to the company privacy policy.*'/>
+        {errorCheck && <p className="check-error">{errorMsg}</p>}
         <button onClick={handleSubmitEmail} type="submit" className="btn btn-footer">Subscribe</button>
       </Form.Group>
         </Form>

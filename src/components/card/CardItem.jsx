@@ -13,6 +13,7 @@ const cardItem = (props) => {
 
   const updateTitleHandler = (event) => {
     setShowTitle(prevShow => !prevShow)
+    // event.currentTarget.disabled = true
   }
 
     return ( 
@@ -24,9 +25,9 @@ const cardItem = (props) => {
         <i><b className="card-text">{props.title}</b></i>
         {showTitle && <div key={Math.random() * 100}><span className='extra-content'>{props.extraContent}</span></div>}
         </Card.Text>
-        <Button onClick={updateTitleHandler} variant="outline-light">More Details
+        <button  onClick={updateTitleHandler}  className='showBtn'>{showTitle ? 'Close' : 'More Details'}
         <FontAwesomeIcon icon="fa-solid fa-code"  className="code-icon"/>
-        </Button>
+        </button>
       </Card.Body>
     </Card>
     )

@@ -40,4 +40,22 @@
     margin-top: 25px;
     font-weight: 450;
     font-size: 22px;
+    
+}
+
+.showBtn {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 7px;
+    font-size: 15px;
+    min-width: 80px;
+}
+
+.showBtn:hover {
+    background-color: rgb(197, 197, 197);
+    border: 1px solid #333;
+    color: #333;
 }
