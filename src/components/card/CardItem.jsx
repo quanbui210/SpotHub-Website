@@ -8,12 +8,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const cardItem = (props) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [title, setTitle] = useState(props.title);
-  const updateTitle = (event) => {
-    setTitle(prevContent => [...prevContent, <div key={Math.random() * 100}><span className='extra-content'>{props.extraContent}</span></div>])
-    event.currentTarget.disabled = true;
-  }
+  const [showTitle, setShowTitle] = useState(false)
 
+
+  const updateTitleHandler = (event) => {
+    setShowTitle(prevShow => !prevShow)
+  }
 
     return ( 
     <Card style={{ width: '18rem' }}>
@@ -21,9 +21,10 @@ const cardItem = (props) => {
       <Card.Img variant="top" src={props.image} className="card-img" />
         <Card.Title>{props.name}</Card.Title>
         <Card.Text >
-        <i><b className="card-text">{title}</b></i>
+        <i><b className="card-text">{props.title}</b></i>
+        {showTitle && <div key={Math.random() * 100}><span className='extra-content'>{props.extraContent}</span></div>}
         </Card.Text>
-        <Button onClick={updateTitle} variant="outline-light">More Details
+        <Button onClick={updateTitleHandler} variant="outline-light">More Details
         <FontAwesomeIcon icon="fa-solid fa-code"  className="code-icon"/>
         </Button>
       </Card.Body>

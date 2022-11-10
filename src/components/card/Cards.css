@@ -40,7 +40,7 @@
     background-color: #3a393a;
     margin: 80px 20px 0px 50px;
     max-width: 300px;
-    
+    box-shadow: 0 2px 2px;
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
